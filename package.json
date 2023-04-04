@@ -1,0 +1,17 @@
+{
+  "name": "swagger-ts",
+  "version": "1.0.0",
+  "description": "根据swagger文档地址生成前端使用的api.ts文件",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "author": "lzp",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "js-beautify": "^1.14.7",
+    "swagger-parser": "^10.0.3"
+  }
+}
