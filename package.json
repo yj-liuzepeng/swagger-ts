@@ -1,13 +1,14 @@
 {
   "name": "swagger-ts",
   "version": "1.0.0",
+  "author": "lzp",
   "description": "根据swagger文档地址生成前端使用的api.ts文件",
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "demo": "cross-env rundemo=true node index.js"
   },
-  "author": "lzp",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.0.0",
