@@ -1,10 +1,10 @@
 **根据后端生成的swagger文档，导出生成前端需要的api.ts文件，提高开发效率。**
 
-**核心代码：**src/utils/index.js
+**核心代码： **  src/utils/index.js
 
-**配置文件：**src/utils/config.js 
+**配置文件： ** src/utils/config.js 
 
-**生成目录：**src/api
+**生成目录：**  src/api
 
 ![swagger](./src/assets/swagger.png)
 
