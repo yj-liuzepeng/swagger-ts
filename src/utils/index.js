@@ -3,7 +3,7 @@ const path = require("path");
 const chalk = require("chalk");
 const beautify = require("js-beautify").js_beautify;
 const parse = require("swagger-parser");
-const { swaggerUrl, topConfig, apiConfig } = require("./config");
+const { swaggerUrl, topConfig, apiConfig,dirIdx } = require("./config");
 const demoData = require("./demo.json");
 
 // demo or swaggerUrl
@@ -208,7 +208,7 @@ const gen = async () => {
       const item = pathsKeys[i];
       const itemAry = item.split("/");
       const pathsItem = paths[item];
-      let fileName = itemAry[2];
+      let fileName = itemAry[dirIdx || 2];
       if (!fileName) continue;
       fileName = fileName.toLowerCase();
       pathsItem.allPath = item;

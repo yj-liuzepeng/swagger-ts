@@ -1,11 +1,13 @@
 /**
  * 配置项
  * swaggerUrl：swagger文档地址
+ * dirIdx：按索引生成文件，比如接口  /job/rule/createOrUpdateDataChangeRules，根据job生成配置1，根据rule生成配置2
  * topConfig：单个ts文件顶部配置，如引入axios，定义返回数据类型等等
  * apiConfig： 单个接口的结构
  */
 
 const swaggerUrl = "http://xxx/v2/api-docs";
+const dirIdx = 2
 const topConfig = `import http from "../utils/http";
   interface ResponseType extends Promise<any> {
     data?: object;
@@ -50,6 +52,7 @@ const apiConfig = (
 
 module.exports = {
   swaggerUrl,
+  dirIdx,
   topConfig,
   apiConfig,
 };
